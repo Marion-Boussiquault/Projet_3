@@ -1,0 +1,22 @@
+{
+  "name": "projet_3",
+  "version": "1.0.0",
+  "description": "Création de la carte du site web Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marion-Boussiquault/Projet_3.git"
+  },
+  "keywords": [
+    "violet"
+  ],
+  "author": "marion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marion-Boussiquault/Projet_3/issues"
+  },
+  "homepage": "https://github.com/Marion-Boussiquault/Projet_3#readme"
+}
