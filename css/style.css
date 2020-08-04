@@ -1,0 +1,344 @@
+/*mixin general*/
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto:wght@100&display=swap");
+.vibreur:hover {
+  -webkit-animation: shake 60ms ease-in-out;
+  animation: shake 60ms ease-in-out;
+  -webkit-animation-iteration-count: 20;
+  animation-iteration-count: 20;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(5%);
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: translateX(-5%);
+    transform: rotate(-5deg);
+  }
+}
+@font-face {
+  font-family: "Devonshire-Regular";
+  src: url("../police/Devonshire-Regular.ttf");
+}
+@font-face {
+  font-family: "Heart-Warning";
+  src: url("../police/Heart-Warming.otf");
+}
+@font-face {
+  font-family: "DancingScript";
+  src: url(../police/DancingScript.ttf);
+}
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url(../police/KaushanScript-Regular.ttf);
+}
+@font-face {
+  font-family: "SweetyStrawberry";
+  src: url(../police/SweetyStrawberry.ttf);
+}
+@font-face {
+  font-family: "Vinegar-Regular";
+  src: url(../police/Vinegar-Regular.otf);
+}
+@font-face {
+  font-family: "Archivo";
+  src: url(../police/Archivo-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Archivoregular";
+  src: url(../police/Archivo-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+.carte {
+  margin: 9rem 3rem 10rem 3rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  box-shadow: 6px 6px 6px 6px #f5f3f3;
+}
+.carte__titre {
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+  font-size: 15px;
+}
+.carte__titre--titre-note {
+  color: #3d1319;
+  font-family: "Devonshire-Regular";
+  font-size: 40px;
+}
+.carte__titre--titre-chic {
+  font-family: "Croissant+One";
+  background: linear-gradient(135deg, #e38a12 0%, #9056ff 71%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 40px;
+}
+.carte__titre--titre-delice {
+  font-family: "kamal";
+  background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 71%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 40px;
+}
+.carte__titre--titre-palette {
+  font-family: "KaushanScript-Regular";
+  background: linear-gradient(135deg, #3e923a 0%, #beff7f 71%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 40px;
+}
+.carte__element {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding-top: 1rem;
+}
+.carte__element--prix {
+  font-weight: bold;
+}
+.carte.--menu1 {
+  color: #3d1319;
+  font-family: "kalam";
+  background-color: #fcdfdb;
+  font-weight: 300;
+}
+.carte.--menu2 {
+  font-family: "Croissant+One";
+  background-color: #fff5fe;
+}
+.carte.--menu3 {
+  background-color: #eeefef;
+  font-family: "Kalam";
+  font-weight: 300;
+}
+.carte.--menu4 {
+  background-color: #fdfffd;
+  font-family: "Kalam";
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3d1319;
+  font-family: "Devonshire-Regular";
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.carte h1 i {
+  background: linear-gradient(135deg, #f15d61 0%, #f6916a 71%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 4rem;
+}
+
+.carte h3 i {
+  background: linear-gradient(135deg, #f15d61 0%, #f6916a 71%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 22px;
+  padding-right: 0.5rem;
+}
+
+.couleur-1 {
+  color: #c77412;
+}
+
+.couleur-2 {
+  color: #a56899;
+}
+
+.couleur-3 {
+  color: #6e4ccc;
+}
+
+.livre-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3rem 4rem;
+}
+.livre-menu__couverture {
+  display: flex;
+  justify-content: center;
+  width: 48%;
+  margin-top: 2rem;
+  box-shadow: 6px 6px 6px 6px #f5f3f3;
+  text-align: center;
+  min-height: 400px;
+}
+.livre-menu__couverture-titre {
+  display: inline-block;
+}
+.livre-menu__couverture-titre.--menu1 {
+  color: #3d1319;
+  font-family: "Devonshire-Regular";
+}
+.livre-menu__couverture-titre.--menu2 {
+  font-family: "Croissant+One";
+  background: linear-gradient(135deg, #e38a12 0%, #9056ff 71%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.livre-menu__couverture-titre.--menu3 {
+  font-family: "kamal";
+  background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 71%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.livre-menu__couverture-titre.--menu4 {
+  font-family: "KaushanScript-Regular";
+  background: linear-gradient(135deg, #3e923a 0%, #beff7f 71%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.livre-menu__couverture-element {
+  text-align: center;
+  font-size: 30px;
+  padding: 2rem 2rem;
+}
+.livre-menu__couverture-element.--menu1 {
+  text-transform: uppercase;
+  color: #3d1319;
+  font-family: "kalam";
+}
+.livre-menu__couverture-element.--menu2 {
+  font-family: "Vinegar-Regular";
+  color: #c8741d;
+}
+.livre-menu__couverture-element.--menu3 {
+  font-family: "Kalam";
+  color: #0087f8;
+}
+.livre-menu__couverture-element.--menu4 {
+  font-family: "Kalam";
+  color: #71bf5d;
+}
+.livre-menu__couverture.--menu1 {
+  background-color: #fcdfdb;
+}
+.livre-menu__couverture.--menu2 {
+  background-color: #fff5fe;
+}
+.livre-menu__couverture.--menu3 {
+  background-color: #eeefef;
+}
+.livre-menu__couverture.--menu4 {
+  background-color: #fdfffd;
+}
+
+.livre-menu i {
+  font-size: 5rem;
+  background: linear-gradient(135deg, #f15d61 0%, #f6916a 71%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.prochainement {
+  text-align: center;
+  background-color: #569c88;
+  border-radius: 10px;
+  color: #fecb51;
+  font-size: 22px;
+  width: 30%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  font-family: "Archivoregular";
+}
+
+header {
+  background-color: #579c87;
+  color: #fdcb46;
+  font-family: "Archivo";
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+header p {
+  color: #fdcb46;
+}
+
+header a {
+  color: #fdcb46;
+}
+
+.fixe {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.fixe__couleur {
+  background-color: #579c87;
+  color: #fdcb46;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  font-size: 20px;
+  font-family: "Archivoregular";
+}
+
+footer a {
+  color: #fdcb46;
+}
+
+.mentions {
+  padding: 3rem 3rem 6rem 3rem;
+  font-family: "arial";
+  text-align: justify;
+}
+.mentions__titre {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 2rem;
+}
+.mentions__titre--sous-titre {
+  font-family: "Kalam";
+  font-size: 18px;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.corps {
+  padding-bottom: 4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
