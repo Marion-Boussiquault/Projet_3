@@ -1,0 +1,14 @@
+
+/*mixin general*/
+
+@mixin header-footer {
+    background-color: $couleur-primaire;
+    color: $texte-couleur;
+}
+
+@mixin shake {
+    -webkit-animation: shake 60ms ease-in-out;
+    animation: shake 60ms ease-in-out;
+    -webkit-animation-iteration-count: 20;
+    animation-iteration-count: 20;
+}

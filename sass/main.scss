@@ -1,0 +1,18 @@
+
+@import "utils/mixins";
+@import "composants/btn";
+@import "utils/variables";
+@import "utils/keyframes";
+@import "base/base";
+@import "layout/carte";
+@import "layout/livre-menu";
+@import "layout/prochainement";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/mentions-legales";
+
+
+.corps
+{
+    padding-bottom: 4rem;
+}

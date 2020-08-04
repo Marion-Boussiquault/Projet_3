@@ -1,0 +1,11 @@
+
+@keyframes shake {
+    0% {
+        transform: translateX(5%);
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: translateX(-5%);
+        transform: rotate(-5deg);
+    }
+}

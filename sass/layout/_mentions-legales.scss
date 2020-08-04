@@ -1,0 +1,24 @@
+.mentions
+{
+    padding: 3rem 3rem 6rem 3rem;
+    font-family: $police-mentions-titre;
+    text-align: justify;
+
+
+    &__titre
+    {
+        text-align: center;
+        font-size: 30px;
+        padding-bottom: 2rem;
+
+        &--sous-titre
+        {
+            font-family: $police-mentions-sous-titre;
+            font-size: 18px;
+            padding-bottom: 1rem;
+            text-decoration: underline;
+        }
+
+    }
+}
+

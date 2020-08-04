@@ -1,0 +1,123 @@
+.livre-menu
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 3rem 4rem;
+
+    &__couverture
+    {
+    display: flex;
+    justify-content: center;    
+    width: 48%;
+    margin-top: 2rem;
+    box-shadow: 6px 6px 6px 6px $couleur-box-shadow;
+    text-align: center;
+    min-height: 400px;
+
+        &-titre
+        {
+            display: inline-block;
+
+            
+            &.--menu1 {
+                color:$couleur-texte-note;
+                font-family: $police-note;
+            }
+
+            &.--menu2{
+                font-family: $police-chic;
+                background: linear-gradient(135deg, $chic-gauche 0%, $chic-droite 71%);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+
+            &.--menu3{
+
+                font-family: $police-delice;
+                background: linear-gradient(135deg, $delice-gauche 0%, $delice-droite 71%);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+
+            &.--menu4{
+                font-family: $police-palette ;
+                background: linear-gradient(135deg, $palette-gauche 0%, $palette-droite 71%);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+  
+        }
+        &-element
+        {
+            text-align: center;
+            font-size: 30px;
+            padding: 2rem 2rem;
+
+            &.--menu1 {
+
+                text-transform: uppercase;
+                color: $couleur-texte-note;
+                font-family: $police-note-corps;
+            }
+
+            &.--menu2{
+                font-family:$police-chic-corps;
+                color: rgb(200, 116,29);
+
+            }
+
+            &.--menu3{
+                font-family: $police-delice-corps;
+                color: rgb(0,135,248);
+            }
+
+            &.--menu4{
+                font-family: $police-palette-corps;
+                color: rgb(113,191,93);
+            }
+        }
+
+        &.--menu1
+        {
+            background-color: $couleur-note;
+        }
+
+        &.--menu2
+        {
+            background-color: $couleur-chic; 
+        }
+
+        &.--menu3
+        {
+            background-color: $couleur-delice;
+        }
+
+        &.--menu4
+        {
+            background-color: $couleur-palette;
+        }
+    }
+
+}
+
+.livre-menu i
+{
+    font-size: 5rem;
+    background: linear-gradient(135deg, $gauchecouleur 0%, $droitecouleur 71%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+
+}
+
+a
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

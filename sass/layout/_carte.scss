@@ -1,0 +1,147 @@
+.carte
+{
+    margin: 9rem 3rem 10rem 3rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    box-shadow: 6px 6px 6px 6px $couleur-box-shadow;
+    
+
+
+
+        &__titre
+        {
+            text-align: center;
+            padding-bottom: 2rem;
+            padding-top: 4rem;
+            font-size: 15px;
+
+            &--titre-note
+            {
+                color:$couleur-texte-note;
+                font-family: $police-note;
+                font-size: 40px;
+            }
+            &--titre-chic
+            {
+                font-family: $police-chic;
+                background: linear-gradient(135deg, $chic-gauche 0%, $chic-droite 71%);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                font-size: 40px;
+            }
+
+            &--titre-delice
+            {
+                font-family: $police-delice;
+                background: linear-gradient(135deg, $delice-gauche 0%, $delice-droite 71%);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                font-size: 40px;
+
+            }
+
+            &--titre-palette
+            {
+                font-family: $police-palette ;
+                background: linear-gradient(135deg, $palette-gauche 0%, $palette-droite 71%);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                font-size: 40px;
+            }
+
+        }
+
+    &__element
+    {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        padding-top: 1rem;
+        
+        &--prix
+        {
+            font-weight:  bold;
+        }
+    }
+
+    &.--menu1
+    {
+        color: $couleur-texte-note;
+        font-family: $police-note-corps;
+        background-color: $couleur-note;
+        font-weight: 300;
+
+    }
+
+    &.--menu2
+    {
+        font-family: $police-chic;
+        background-color: $couleur-chic;
+    }
+
+    &.--menu3
+    {
+        background-color: $couleur-delice;
+        font-family: $police-delice-corps;
+        font-weight: 300;
+    }
+
+    &.--menu4
+    {
+        background-color: $couleur-palette;
+        font-family: $police-palette-corps;
+        font-weight: 300;
+    }
+
+}
+
+
+h3
+{
+    font-size: 22px;
+    font-weight: bold;
+    color:$couleur-texte-note;
+    font-family: $police-note;
+    text-align: center;
+    padding-top: 3rem;
+    
+}
+
+.carte h1 i
+{
+    background: linear-gradient(135deg, $gauchecouleur 0%, $droitecouleur 71%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 4rem;
+}
+
+.carte h3 i
+{
+    background: linear-gradient(135deg, $gauchecouleur 0%, $droitecouleur 71%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; 
+    font-size: 22px;
+    padding-right: 0.5rem;
+}
+
+.couleur-1
+{
+    color: $menu-chic-couleurtexte;
+}
+
+.couleur-2
+{
+    color: $menu-chic-couleurtexte2;
+}
+
+.couleur-3
+{
+    color: $menu-chic-couleurtexte3;
+}
