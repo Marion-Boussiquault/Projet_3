@@ -1,21 +1,28 @@
-.btn
-{
-    display: flex;
-    justify-content: center;
-}
 
 .prochainement
 {
-    text-align: center;
-    background-color: rgba(86, 156, 136, 1);
-    border-radius: 10px;
-    color: rgba(254,203, 81,1);
-    font-size: 22px;
-    width: 30%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-    font-family: $police-footer-pro;
-}
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+        &__btn
+        {
+        padding: 0.75rem;
+        background-color: rgba(86, 156, 136, 1);
+        border-radius: 10px;
+        color: rgba(254,203, 81,1);
+        font-size: 22px;
+        width: 265px;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-family: $police-footer-pro;
+            span
+            {
+                @include dots;
+            }
+        
+        }
+    }
