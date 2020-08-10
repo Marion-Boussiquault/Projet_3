@@ -18,6 +18,12 @@
     transform: rotate(-5deg);
   }
 }
+@keyframes dots {
+  50% {
+    opacity: 0;
+    transform: scale(0.8) translateY(8px);
+  }
+}
 @font-face {
   font-family: "Devonshire-Regular";
   src: url("../police/Devonshire-Regular.ttf");
@@ -58,23 +64,20 @@
 }
 
 .carte {
-  margin: 9rem 3rem 10rem 3rem;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 3rem 3rem 5rem 3rem;
   box-shadow: 6px 6px 6px 6px #f5f3f3;
+  width: 600px;
+  margin: 3rem auto 6rem auto;
 }
 .carte__titre {
   text-align: center;
   padding-bottom: 2rem;
   padding-top: 4rem;
-  font-size: 15px;
+  font-size: 40px;
 }
 .carte__titre--titre-note {
   color: #3d1319;
   font-family: "Devonshire-Regular";
-  font-size: 40px;
 }
 .carte__titre--titre-chic {
   font-family: "Croissant+One";
@@ -82,7 +85,6 @@
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 40px;
 }
 .carte__titre--titre-delice {
   font-family: "kamal";
@@ -90,7 +92,6 @@
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 40px;
 }
 .carte__titre--titre-palette {
   font-family: "KaushanScript-Regular";
@@ -98,7 +99,19 @@
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 40px;
+}
+.carte__sous-titre {
+  font-size: 15px;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.carte__sous-titre--palette {
+  font-weight: 300;
+}
+.carte__sous-titre--delice {
+  font-weight: 300;
 }
 .carte__element {
   display: flex;
@@ -168,11 +181,61 @@ h3 {
   color: #6e4ccc;
 }
 
+section a {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.4s, opacity 0.4s;
+}
+section a:hover {
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+
+.traits {
+  padding-top: 1.5rem;
+}
+.traits--chic1 {
+  display: inline-block;
+  padding-bottom: 3px;
+  background: linear-gradient(to top, #c77412 0%, #c77412 2px, transparent 1px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.6s ease-in-out;
+}
+.traits--chic1:hover {
+  background-size: 100% 100%;
+}
+.traits--chic2 {
+  display: inline-block;
+  padding-bottom: 3px;
+  background: linear-gradient(to top, #a56899 0%, #a56899 2px, transparent 1px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.6s ease-in-out;
+}
+.traits--chic2:hover {
+  background-size: 100% 100%;
+}
+.traits--chic3 {
+  display: inline-block;
+  padding-bottom: 3px;
+  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 2px, transparent 1px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.6s ease-in-out;
+}
+.traits--chic3:hover {
+  background-size: 100% 100%;
+}
+
+img {
+  width: 30%;
+}
+
 .livre-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 3rem 4rem;
+  width: 600px;
+  margin: auto;
 }
 .livre-menu__couverture {
   display: flex;
@@ -260,23 +323,47 @@ a {
   flex-direction: column;
 }
 
-.btn {
+.prochainement {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-
-.prochainement {
-  text-align: center;
+.prochainement__btn {
+  padding: 0.75rem;
   background-color: #569c88;
   border-radius: 10px;
   color: #fecb51;
   font-size: 22px;
-  width: 30%;
+  width: 265px;
+  font-size: 1.3rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  text-align: center;
   font-family: "Archivoregular";
+}
+.prochainement__btn span {
+  width: 6px;
+  height: 6px;
+  margin: 0 2px 4px 8px;
+  border-radius: 50%;
+  background-color: #fdcb46;
+  display: inline-block;
+  -webkit-animation-name: dots;
+  animation-name: dots;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+.prochainement__btn span:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.prochainement__btn span:nth-child(3) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 header {
@@ -337,8 +424,34 @@ footer a {
   text-decoration: underline;
 }
 
-.corps {
-  padding-bottom: 4rem;
+@media screen and (max-width: 741px) {
+  .livre-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .livre-menu__couverture {
+    width: 66%;
+    margin: 2rem auto 2rem auto;
+  }
+
+  .carte {
+    width: 250px;
+  }
+
+  img {
+    width: 15%;
+    height: 18px;
+  }
+
+  .traits {
+    padding-top: 0rem;
+  }
+
+  span {
+    padding-left: 0.4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
