@@ -1,11 +1,11 @@
 .carte
 {
-    margin: 9rem 3rem 10rem 3rem;
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 3rem 3rem 5rem 3rem;
     box-shadow: 6px 6px 6px 6px $couleur-box-shadow;
+    width: 600px;
+    margin: 3rem auto 6rem auto;
+
+
     
 
 
@@ -15,13 +15,13 @@
             text-align: center;
             padding-bottom: 2rem;
             padding-top: 4rem;
-            font-size: 15px;
+            font-size: 40px;
+        
 
             &--titre-note
             {
                 color:$couleur-texte-note;
                 font-family: $police-note;
-                font-size: 40px;
             }
             &--titre-chic
             {
@@ -30,7 +30,6 @@
                 color: transparent;
                 -webkit-background-clip: text;
                 background-clip: text;
-                font-size: 40px;
             }
 
             &--titre-delice
@@ -40,7 +39,6 @@
                 color: transparent;
                 -webkit-background-clip: text;
                 background-clip: text;
-                font-size: 40px;
 
             }
 
@@ -51,10 +49,26 @@
                 color: transparent;
                 -webkit-background-clip: text;
                 background-clip: text;
-                font-size: 40px;
             }
 
         }
+    &__sous-titre
+    {
+        font-size: 15px;
+        text-align: center;
+        padding: 2rem 0 1rem 0;
+        display: flex;
+        justify-content: space-between;
+
+            &--palette
+            {
+                font-weight: 300;
+            }
+            &--delice
+            {
+                font-weight: 300;
+            }
+    }
 
     &__element
     {
@@ -144,4 +158,33 @@ h3
 .couleur-3
 {
     color: $menu-chic-couleurtexte3;
+}
+
+section a
+{
+    @include trans-zoom
+}
+
+.traits
+{
+    padding-top: 1.5rem;
+    
+    &--chic1
+    {
+    @include Under ($menu-chic-couleurtexte);
+    }
+    &--chic2
+    {
+        @include Under ($menu-chic-couleurtexte2);
+    }
+    &--chic3
+    {
+        @include Under ($menu-chic-couleurtexte3);
+    }
+    
+}
+
+img
+{
+    width: 30%;
 }
