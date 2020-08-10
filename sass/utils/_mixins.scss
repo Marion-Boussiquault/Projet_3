@@ -12,3 +12,50 @@
     -webkit-animation-iteration-count: 20;
     animation-iteration-count: 20;
 }
+
+
+@mixin dots {
+    width: 6px;
+    height: 6px;
+    margin: 0 2px 4px 8px;
+    border-radius: 50%;
+    background-color: $texte-couleur;
+    display: inline-block;
+    -webkit-animation-name: dots;
+    animation-name: dots;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    &:nth-child(2) {
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+    &:nth-child(3) {
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+    }
+}
+
+@mixin trans-zoom {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.4s, opacity 0.4s;
+    &:hover {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+}
+
+@mixin Under ($couleur: $couleur-texte-note) {
+    display: inline-block;
+    padding-bottom: 3px;
+    background: linear-gradient(to top, $couleur 0%, $couleur 2px, transparent 1px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.6s ease-in-out;
+    &:hover {
+        background-size: 100% 100%;
+    }
+}
