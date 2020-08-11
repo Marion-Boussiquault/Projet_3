@@ -135,14 +135,20 @@ h3
     font-size: 4rem;
 }
 
-.carte h3 i
+.titre-bis
 {
-    background: linear-gradient(135deg, $gauchecouleur 0%, $droitecouleur 71%);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text; 
-    font-size: 22px;
-    padding-right: 0.5rem;
+    margin: 1rem auto 1rem auto;
+    font-size: 35px;
+
+    i
+    {
+        background: linear-gradient(135deg, $gauchecouleur 0%, $droitecouleur 71%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text; 
+        font-size: 30px;
+        padding-right: 0.5rem;
+    }
 }
 
 .couleur-1
