@@ -64,9 +64,10 @@
 }
 
 .carte {
+  box-sizing: border-box;
   padding: 3rem 3rem 5rem 3rem;
+  max-width: 600px;
   box-shadow: 6px 6px 6px 6px #f5f3f3;
-  width: 600px;
   margin: 3rem auto 6rem auto;
 }
 .carte__titre {
@@ -83,22 +84,22 @@
   font-family: "Croissant+One";
   background: linear-gradient(135deg, #e38a12 0%, #9056ff 71%);
   color: transparent;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 .carte__titre--titre-delice {
   font-family: "kamal";
   background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 71%);
   color: transparent;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 .carte__titre--titre-palette {
   font-family: "KaushanScript-Regular";
   background: linear-gradient(135deg, #3e923a 0%, #beff7f 71%);
   color: transparent;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 .carte__sous-titre {
   font-size: 15px;
@@ -106,6 +107,7 @@
   padding: 2rem 0 1rem 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .carte__sous-titre--palette {
   font-weight: 300;
@@ -155,8 +157,8 @@ h3 {
 .carte h1 i {
   background: linear-gradient(135deg, #f15d61 0%, #f6916a 71%);
   color: transparent;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  background-clip: text;
   font-size: 4rem;
 }
 
@@ -167,8 +169,8 @@ h3 {
 .titre-bis i {
   background: linear-gradient(135deg, #f15d61 0%, #f6916a 71%);
   color: transparent;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  background-clip: text;
   font-size: 30px;
   padding-right: 0.5rem;
 }
@@ -197,6 +199,14 @@ section a:hover {
 
 .traits {
   padding-top: 1.5rem;
+  display: inline-block;
+  padding-bottom: 3px;
+  background: linear-gradient(to top, #3d1319 0%, #3d1319 2px, transparent 1px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.6s ease-in-out;
+}
+.traits:hover {
+  background-size: 100% 100%;
 }
 .traits--chic1 {
   display: inline-block;
@@ -233,6 +243,20 @@ img {
   width: 30%;
 }
 
+@media screen and (max-width: 741px) {
+  .carte {
+    margin: 0;
+  }
+
+  img {
+    width: 15%;
+    height: 18px;
+  }
+
+  .traits {
+    padding-top: 0rem;
+  }
+}
 main {
   margin-bottom: 6rem;
 }
@@ -265,22 +289,22 @@ main {
   font-family: "Croissant+One";
   background: linear-gradient(135deg, #e38a12 0%, #9056ff 71%);
   color: transparent;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 .livre-menu__couverture-titre.--menu3 {
   font-family: "kamal";
   background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 71%);
   color: transparent;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 .livre-menu__couverture-titre.--menu4 {
   font-family: "KaushanScript-Regular";
   background: linear-gradient(135deg, #3e923a 0%, #beff7f 71%);
   color: transparent;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 .livre-menu__couverture-element {
   text-align: center;
@@ -321,8 +345,8 @@ main {
   font-size: 5rem;
   background: linear-gradient(135deg, #f15d61 0%, #f6916a 71%);
   color: transparent;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 
 a {
@@ -331,6 +355,18 @@ a {
   flex-direction: column;
 }
 
+@media screen and (max-width: 741px) {
+  .livre-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .livre-menu__couverture {
+    width: 66%;
+    margin: 2rem auto 2rem auto;
+  }
+}
 .prochainement {
   display: flex;
   justify-content: center;
@@ -342,7 +378,6 @@ a {
   border-radius: 10px;
   color: #fecb51;
   font-size: 22px;
-  width: 265px;
   font-size: 1.3rem;
   margin-top: 4rem;
   margin-bottom: 2rem;
@@ -430,36 +465,6 @@ footer a {
   font-size: 18px;
   padding-bottom: 1rem;
   text-decoration: underline;
-}
-
-@media screen and (max-width: 741px) {
-  .livre-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .livre-menu__couverture {
-    width: 66%;
-    margin: 2rem auto 2rem auto;
-  }
-
-  .carte {
-    width: 250px;
-  }
-
-  img {
-    width: 15%;
-    height: 18px;
-  }
-
-  .traits {
-    padding-top: 0rem;
-  }
-
-  span {
-    padding-left: 0.4rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
