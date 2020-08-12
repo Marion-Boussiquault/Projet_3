@@ -1,8 +1,9 @@
 .carte
 {
+    box-sizing: border-box;
     padding: 3rem 3rem 5rem 3rem;
+    max-width: 600px;
     box-shadow: 6px 6px 6px 6px $couleur-box-shadow;
-    width: 600px;
     margin: 3rem auto 6rem auto;
 
 
@@ -27,18 +28,14 @@
             {
                 font-family: $police-chic;
                 background: linear-gradient(135deg, $chic-gauche 0%, $chic-droite 71%);
-                color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
+                @include ClipText;              
             }
 
             &--titre-delice
             {
                 font-family: $police-delice;
                 background: linear-gradient(135deg, $delice-gauche 0%, $delice-droite 71%);
-                color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
+                @include ClipText;
 
             }
 
@@ -46,9 +43,7 @@
             {
                 font-family: $police-palette ;
                 background: linear-gradient(135deg, $palette-gauche 0%, $palette-droite 71%);
-                color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
+                @include ClipText;
             }
 
         }
@@ -59,6 +54,7 @@
         padding: 2rem 0 1rem 0;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
             &--palette
             {
@@ -129,9 +125,7 @@ h3
 .carte h1 i
 {
     background: linear-gradient(135deg, $gauchecouleur 0%, $droitecouleur 71%);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    @include ClipText;
     font-size: 4rem;
 }
 
@@ -143,9 +137,7 @@ h3
     i
     {
         background: linear-gradient(135deg, $gauchecouleur 0%, $droitecouleur 71%);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text; 
+        @include ClipText; 
         font-size: 30px;
         padding-right: 0.5rem;
     }
@@ -174,6 +166,7 @@ section a
 .traits
 {
     padding-top: 1.5rem;
+    @include Under;
     
     &--chic1
     {
@@ -181,11 +174,11 @@ section a
     }
     &--chic2
     {
-        @include Under ($menu-chic-couleurtexte2);
+    @include Under ($menu-chic-couleurtexte2);
     }
     &--chic3
     {
-        @include Under ($menu-chic-couleurtexte3);
+    @include Under ($menu-chic-couleurtexte3);
     }
     
 }
@@ -193,4 +186,21 @@ section a
 img
 {
     width: 30%;
+}
+
+@media screen and (max-width: 741px)
+{
+.carte{
+    margin:0;
+}
+img
+{
+    width: 15%;
+    height: 18px;
+}
+.traits
+{
+    padding-top: 0rem;
+}
+
 }

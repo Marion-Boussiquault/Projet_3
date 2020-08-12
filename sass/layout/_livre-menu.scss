@@ -36,26 +36,20 @@ margin: auto;
             &.--menu2{
                 font-family: $police-chic;
                 background: linear-gradient(135deg, $chic-gauche 0%, $chic-droite 71%);
-                color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
+                @include ClipText;
             }
 
             &.--menu3{
 
                 font-family: $police-delice;
                 background: linear-gradient(135deg, $delice-gauche 0%, $delice-droite 71%);
-                color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
+                @include ClipText;
             }
 
             &.--menu4{
                 font-family: $police-palette ;
                 background: linear-gradient(135deg, $palette-gauche 0%, $palette-droite 71%);
-                color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
+                @include ClipText;
             }
   
         }
@@ -116,9 +110,7 @@ margin: auto;
 {
     font-size: 5rem;
     background: linear-gradient(135deg, $gauchecouleur 0%, $droitecouleur 71%);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    @include ClipText;
     
 
 }
@@ -128,4 +120,25 @@ a
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+@media screen and (max-width: 741px)
+{
+
+.livre-menu
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.livre-menu__couverture 
+{
+    width: 66%;
+    margin: 2rem auto 2rem auto;
+    
+}
+
+
+
 }
