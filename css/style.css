@@ -124,22 +124,22 @@
 .carte__element--prix {
   font-weight: bold;
 }
-.carte.--menu1 {
+.carte--menu1 {
   color: #3d1319;
   font-family: "kalam";
   background-color: #fcdfdb;
   font-weight: 300;
 }
-.carte.--menu2 {
+.carte--menu2 {
   font-family: "Croissant+One";
   background-color: #fff5fe;
 }
-.carte.--menu3 {
+.carte--menu3 {
   background-color: #eeefef;
   font-family: "Kalam";
   font-weight: 300;
 }
-.carte.--menu4 {
+.carte--menu4 {
   background-color: #fdfffd;
   font-family: "Kalam";
   font-weight: 300;

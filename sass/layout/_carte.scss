@@ -79,7 +79,7 @@
         }
     }
 
-    &.--menu1
+    &--menu1
     {
         color: $couleur-texte-note;
         font-family: $police-note-corps;
@@ -88,20 +88,20 @@
 
     }
 
-    &.--menu2
+    &--menu2
     {
         font-family: $police-chic;
         background-color: $couleur-chic;
     }
 
-    &.--menu3
+    &--menu3
     {
         background-color: $couleur-delice;
         font-family: $police-delice-corps;
         font-weight: 300;
     }
 
-    &.--menu4
+    &--menu4
     {
         background-color: $couleur-palette;
         font-family: $police-palette-corps;
