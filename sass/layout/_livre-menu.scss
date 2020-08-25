@@ -1,143 +1,136 @@
-main
-{
+main {
     margin-bottom: 6rem;
 }
 
 
-.livre-menu
-{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-margin: 3rem 4rem;
-width: 600px;
-margin: auto;
-
-    &__couverture
-    {
+.livre-menu {
     display: flex;
-    justify-content: center;    
-    width: 48%;
-    margin-top: 2rem;
-    box-shadow: 6px 6px 6px 6px $couleur-box-shadow;
-    text-align: center;
-    min-height: 400px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem 4rem;
+    width: 600px;
+    margin: auto;
 
-        &-titre
-        {
+    &__couverture {
+
+        display: flex;
+        justify-content: center;
+        width: 48%;
+        margin-top: 2rem;
+        box-shadow: 6px 6px 6px 6px $couleur-box-shadow;
+        text-align: center;
+        min-height: 400px;
+
+        &-titre {
             display: inline-block;
 
-            
-            &.--menu1 {
-                color:$couleur-texte-note;
+        }
+
+        &-element {
+            text-align: center;
+            font-size: 30px;
+            padding: 2rem 2rem;
+        }
+
+
+        &--menu1 {
+            background-color: $couleur-note;
+
+            .livre-menu__couverture-titre {
+                color: $couleur-texte-note;
                 font-family: $police-note;
             }
 
-            &.--menu2{
+            .livre-menu__couverture-element {
+
+                text-transform: uppercase;
+                color: $couleur-texte-note;
+                font-family: $police-note-corps;
+
+            }
+        }
+
+        &--menu2 {
+            background-color: $couleur-chic;
+
+            .livre-menu__couverture-titre {
                 font-family: $police-chic;
                 background: linear-gradient(135deg, $chic-gauche 0%, $chic-droite 71%);
                 @include ClipText;
             }
 
-            &.--menu3{
+            .livre-menu__couverture-element {
+                font-family: $police-chic-corps;
+                color: rgb(200, 116, 29);
+
+            }
+        }
+
+        &--menu3 {
+            background-color: $couleur-delice;
+
+            .livre-menu__couverture-titre {
 
                 font-family: $police-delice;
                 background: linear-gradient(135deg, $delice-gauche 0%, $delice-droite 71%);
                 @include ClipText;
             }
 
-            &.--menu4{
-                font-family: $police-palette ;
+            .livre-menu__couverture-element {
+                font-family: $police-delice-corps;
+                color: rgb(0, 135, 248);
+
+            }
+        }
+
+        &--menu4 {
+            background-color: $couleur-palette;
+
+            .livre-menu__couverture-titre {
+                font-family: $police-palette;
                 background: linear-gradient(135deg, $palette-gauche 0%, $palette-droite 71%);
                 @include ClipText;
             }
-  
-        }
-        &-element
-        {
-            text-align: center;
-            font-size: 30px;
-            padding: 2rem 2rem;
 
-            &.--menu1 {
-
-                text-transform: uppercase;
-                color: $couleur-texte-note;
-                font-family: $police-note-corps;
-            }
-
-            &.--menu2{
-                font-family:$police-chic-corps;
-                color: rgb(200, 116,29);
-
-            }
-
-            &.--menu3{
-                font-family: $police-delice-corps;
-                color: rgb(0,135,248);
-            }
-
-            &.--menu4{
+            .livre-menu__couverture-element { 
                 font-family: $police-palette-corps;
-                color: rgb(113,191,93);
+                color:$menu-palette-couleurtexte;
             }
         }
 
-        &.--menu1
-        {
-            background-color: $couleur-note;
-        }
-
-        &.--menu2
-        {
-            background-color: $couleur-chic; 
-        }
-
-        &.--menu3
-        {
-            background-color: $couleur-delice;
-        }
-
-        &.--menu4
-        {
-            background-color: $couleur-palette;
-        }
     }
+
+
 
 }
 
-.livre-menu i
-{
+.livre-menu i {
     font-size: 5rem;
     background: linear-gradient(135deg, $gauchecouleur 0%, $droitecouleur 71%);
     @include ClipText;
-    
+
 
 }
 
-a
-{
+a {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-@media screen and (max-width: 741px)
-{
+@media screen and (max-width: 741px) {
 
-.livre-menu
-{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+    .livre-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
-.livre-menu__couverture 
-{
-    width: 66%;
-    margin: 2rem auto 2rem auto;
-    
-}
+    .livre-menu__couverture {
+        width: 66%;
+        margin: 2rem auto 2rem auto;
+
+    }
 
 
 

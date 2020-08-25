@@ -281,64 +281,64 @@ main {
 .livre-menu__couverture-titre {
   display: inline-block;
 }
-.livre-menu__couverture-titre.--menu1 {
+.livre-menu__couverture-element {
+  text-align: center;
+  font-size: 30px;
+  padding: 2rem 2rem;
+}
+.livre-menu__couverture--menu1 {
+  background-color: #fcdfdb;
+}
+.livre-menu__couverture--menu1 .livre-menu__couverture-titre {
   color: #3d1319;
   font-family: "Devonshire-Regular";
 }
-.livre-menu__couverture-titre.--menu2 {
+.livre-menu__couverture--menu1 .livre-menu__couverture-element {
+  text-transform: uppercase;
+  color: #3d1319;
+  font-family: "kalam";
+}
+.livre-menu__couverture--menu2 {
+  background-color: #fff5fe;
+}
+.livre-menu__couverture--menu2 .livre-menu__couverture-titre {
   font-family: "Croissant+One";
   background: linear-gradient(135deg, #e38a12 0%, #9056ff 71%);
   color: transparent;
   background-clip: content-box;
   -webkit-background-clip: text;
 }
-.livre-menu__couverture-titre.--menu3 {
+.livre-menu__couverture--menu2 .livre-menu__couverture-element {
+  font-family: "Vinegar-Regular";
+  color: #c8741d;
+}
+.livre-menu__couverture--menu3 {
+  background-color: #eeefef;
+}
+.livre-menu__couverture--menu3 .livre-menu__couverture-titre {
   font-family: "kamal";
   background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 71%);
   color: transparent;
   background-clip: content-box;
   -webkit-background-clip: text;
 }
-.livre-menu__couverture-titre.--menu4 {
+.livre-menu__couverture--menu3 .livre-menu__couverture-element {
+  font-family: "Kalam";
+  color: #0087f8;
+}
+.livre-menu__couverture--menu4 {
+  background-color: #fdfffd;
+}
+.livre-menu__couverture--menu4 .livre-menu__couverture-titre {
   font-family: "KaushanScript-Regular";
   background: linear-gradient(135deg, #3e923a 0%, #beff7f 71%);
   color: transparent;
   background-clip: content-box;
   -webkit-background-clip: text;
 }
-.livre-menu__couverture-element {
-  text-align: center;
-  font-size: 30px;
-  padding: 2rem 2rem;
-}
-.livre-menu__couverture-element.--menu1 {
-  text-transform: uppercase;
-  color: #3d1319;
-  font-family: "kalam";
-}
-.livre-menu__couverture-element.--menu2 {
-  font-family: "Vinegar-Regular";
-  color: #c8741d;
-}
-.livre-menu__couverture-element.--menu3 {
+.livre-menu__couverture--menu4 .livre-menu__couverture-element {
   font-family: "Kalam";
-  color: #0087f8;
-}
-.livre-menu__couverture-element.--menu4 {
-  font-family: "Kalam";
-  color: #71bf5d;
-}
-.livre-menu__couverture.--menu1 {
-  background-color: #fcdfdb;
-}
-.livre-menu__couverture.--menu2 {
-  background-color: #fff5fe;
-}
-.livre-menu__couverture.--menu3 {
-  background-color: #eeefef;
-}
-.livre-menu__couverture.--menu4 {
-  background-color: #fdfffd;
+  color: #72bf56;
 }
 
 .livre-menu i {
